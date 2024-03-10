@@ -1,0 +1,24 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for buttons */
+  button {
+    margin: 5px;
+  }
+  
+  /* Centering the table */
+  table {
+    margin: 0 auto;
+  }
+  
+  /* Centering table cells */
+  td {
+    vertical-align: top;
+    padding: 10px;
+  }
+  

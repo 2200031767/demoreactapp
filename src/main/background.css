@@ -1,0 +1,6 @@
+.square {
+    background-image: url("C:\Users\aasri\OneDrive\Desktop\MSWD\SDPPROJECT\frontend\sdpdemoreactapp\src\main\images\background.png");
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Position the background image in the center */
+    background-repeat: repeat; /* Do not repeat the background image */
+}
