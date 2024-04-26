@@ -2,7 +2,7 @@
 //import './App.css';
 import {BrowserRouter as Router} from 'react-router-dom'
 import MainNavBar from './main/MainNavBar';
-import AdminNavBar from './admin/AdminNavBar';
+// import AdminNavBar from './admin/AdminNavBar';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 function App() {
 
@@ -13,7 +13,7 @@ function App() {
    <h3 align= "center"> <font color="#6a4c93"> <b> ShopMart</b>  </font> </h3>   
    <Router>
     <MainNavBar/>
-    <AdminNavBar/>
+    {/* <AdminNavBar/> */}
     
    </Router>
 

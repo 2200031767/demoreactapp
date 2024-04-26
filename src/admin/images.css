@@ -21,4 +21,76 @@
     vertical-align: top;
     padding: 10px;
   }
+  .scrollable-container {
+    height: 100vh;
+    overflow-y: auto;
+  }
+
+  .scrollable-container {
+    overflow-x: auto;
+    padding: 20px;
+  }
+  
+  .box {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .box img {
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #259bbf; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Darker Green */
+  }
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .box {
+      width: 100%;
+    }
+  }
+/* In your CSS file */
+.buy-button, .add-to-cart-button {
+  width: 150px; /* Adjust the width as needed */
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.buy-button:hover, .add-to-cart-button:hover {
+  background-color: #45a049; /* Darker Green */
+}
+
+
+
+
+  
   

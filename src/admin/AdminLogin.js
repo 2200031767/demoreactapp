@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './admin.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
-
+import config from '../config'
 
 export default function AdminLogin() 
 {
@@ -24,15 +24,18 @@ export default function AdminLogin()
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2000/checkadminlogin', formData);
-      if (response.data!=null) 
+      const response = await axios.post(`${config.url}/checkadminlogin`, formData);
+      if (response.data != null) 
       {
-        navigate("/AdminHome")
+
+        localStorage.setItem('admin', JSON.stringify(response.data));
+        navigate("/MainHome")
+
       } 
       else 
       {
-        setMessage("Login Failed")
-        setError("")
+        setMessage("Login Failed");
+        setError("");
       }
     } 
     catch (error) 

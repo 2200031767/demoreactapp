@@ -4,6 +4,7 @@ import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './background.css';
 import './images/background.png'
+import config from '../config'
 
 export default function Login() 
 {
@@ -25,7 +26,7 @@ export default function Login()
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2000/checkcustomerlogin', formData);
+      const response = await axios.post(`${config.url}/checkcustomerlogin`, formData);
       if (response.data!=null) 
       {
         console.log(response.data)
@@ -44,6 +45,11 @@ export default function Login()
       setError(error.message)
     }
   };
+
+
+  const handle = async (e) => {
+    window.location.href = '/Registration'; 
+  };
   
 
   return (
@@ -58,15 +64,17 @@ export default function Login()
       }
       <form onSubmit={handleSubmit} >
         <div>
-          <label>Email</label>&nbsp;&nbsp;&nbsp;  &nbsp;
+          <label style = {{color:'whitesmoke'}}>Email</label >&nbsp;&nbsp;&nbsp;  &nbsp;
           &nbsp;&nbsp;&nbsp;<input type="iemail" id="email" value={formData.email} onChange={handleChange} required /> <br/> <br/> <br/> 
         </div>
         <div>
-          <label>Password</label> &nbsp; &nbsp;
-          <input type="ipassword" id="password" value={formData.password} onChange={handleChange} required /> <br/> <br/> <br/>
+          <label style = {{color:'whitesmoke'}}>Password</label> &nbsp; &nbsp;
+          <input type="password" id="password" value={formData.password} onChange={handleChange} required /> <br/> <br/> <br/>
         </div>
         &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;  &nbsp;
-        <button type="submit" className="button" >Login</button>
+        <button type="submit" className="button" >Login</button><br></br> &nbsp;&nbsp;
+        <p style={{ color: 'whitesmoke' }}>Don't have an account? <span onClick={handle} style={{ cursor: 'pointer' }}>Sign up</span></p>
+
       </form>
       
     </div>

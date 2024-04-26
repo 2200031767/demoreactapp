@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import axios from 'axios';
 import './main.css';
 import './images/background.png'
-
+import config from '../config'
 
 export default function Registration() 
 {
@@ -34,7 +34,7 @@ export default function Registration()
     e.preventDefault();
     try 
     {
-      const response = await axios.post('http://localhost:2000/insertcustomer', formData);
+      const response = await axios.post(`${config.url}/insertcustomer`, formData);
       if (response.status === 200) 
       {
         setFormData({
@@ -54,37 +54,42 @@ export default function Registration()
     }
   };
   
+  const handle = async (e) => {
+    window.location.href = '/Login'; 
+  };
   
   return (
     <body className="square"> 
     <div align="center">
       <h3 align="center" style = {{color:'whitesmoke'}}><u> SignUp </u></h3> &nbsp; &nbsp; &nbsp; &nbsp; 
       {
-        message ? <h4 align="center">{message}</h4> : <h4 align="center">{error}</h4>
+        message ? <h4 align="center" style = {{color:'silver'}}>{message}</h4> : <h4 align="center">{error}</h4>
       }
-
+  <br/>
       <form onSubmit={handleSubmit}>
         <div>
-          <label>Full Name</label> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          <label style = {{color:'whitesmoke'}}>Full Name</label> &nbsp; &nbsp; &nbsp; 
           <input type="utext" id="fullname" value={formData.fullname} onChange={handleChange} required />
         </div>
         <br/> 
         <div>
-        &nbsp; &nbsp; &nbsp;  <label>Email</label>  &nbsp; &nbsp; &nbsp;
-          &nbsp; &nbsp; < input type="uemail" id="email" value={formData.email} onChange={handleChange} required />
+         &nbsp; &nbsp;  <label style = {{color:'white'}}>Email</label>  &nbsp; &nbsp; &nbsp;
+          &nbsp; &nbsp; < input type="utext" id="email" value={formData.email} onChange={handleChange} required />
         </div>
         <br/>
         <div>
-        &nbsp; &nbsp; &nbsp;  <label>User Name</label> &nbsp;
+        &nbsp; &nbsp;   <label style = {{color:'whitesmoke'}}>User Name</label> &nbsp;&nbsp;
           <input type="utext" id="username" value={formData.username} onChange={handleChange} required />
         </div>
         <br/>
         <div> 
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<label>Password</label> &nbsp; 
+        &nbsp; &nbsp; &nbsp;<label style = {{color:'whitesmoke'}}>Password</label> &nbsp; &nbsp;
           <input type="upassword" id="password" value={formData.password}   pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&*]).{8,}$" onChange={handleChange}  title="Password must contain at least one digit, one lowercase & one uppercase, one special character, and be at least 8 characters long." required />
         </div>
         <br/> <br/>
-        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button type="submit">SignUp</button>
+        &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<button type="submit">SignUp</button><br></br>&nbsp;&nbsp;
+        <p style={{ color: 'whitesmoke' }} align='center'>Already have an account?<span onClick={handle} style={{ cursor: 'pointer' }}>Login</span></p>
+
       </form>
     </div>
     </body>
