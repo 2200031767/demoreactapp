@@ -16,6 +16,7 @@ export default function AdminNavBar() {
           <li><Link to="/viewcustomers">View Customers</Link></li>
           <li><Link to="/recommend">Recommend</Link></li>
           <li><Link to="/iphone13">Iphone13</Link></li>
+          
         </ul>
       </nav>
 

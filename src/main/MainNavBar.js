@@ -13,6 +13,7 @@ import ViewCustomers from '../admin/ViewCustomers';
 // import { FaOpencart } from 'react-icons/fa';
 import './style.css';
 import '../admin/Product';
+import AddSeller from './../admin/AddSeller';
 
 export default function MainNavBar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -56,6 +57,7 @@ export default function MainNavBar() {
                 <Link to="/adminlogin">AdminLogin</Link>
                 <Link to="/recommend">Recommend</Link>
                 <Link to="/viewcustomers">View Customers</Link>
+                <Link to="/AddSeller">Add Seller</Link>
               </div>
             )}
           </li>
@@ -78,6 +80,9 @@ export default function MainNavBar() {
         <Route path="/recommend" element={<Recommend />} exact />
         <Route path="/adminhome" element={<AdminHome />} exact />
         <Route path="/viewcustomers" element={<ViewCustomers />} exact />
+        <Route path="/AddSeller" element={<AddSeller />} exact />
+
+
         
       </Routes>
     </div>
