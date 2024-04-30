@@ -1,0 +1,85 @@
+
+.cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 92vh;
+  }
+  
+  .forms {
+    width: 200%;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    display: block;
+  }
+  
+  .input-field {
+    margin-bottom: 30px;
+  }
+  
+  .input-field input,
+  .input-field select {
+    width: 150%; /* Changed width to 100% */
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 17px;
+  }
+  
+  .input-field input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .input-field input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  .checkbox-text {
+    margin-bottom: 30px;
+  }
+  
+  .checkbox-content {
+    display: flex;
+    align-items: center;
+  }
+  
+  .checkbox-content input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  .checkbox-content .text {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .checkbox-content .text:hover {
+    text-decoration: underline;
+  }
+  
+  .icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    color: #999;
+    cursor: pointer;
+  }
+  
+  .showHidePw:hover {
+    color: #333;
+  }
+  
+  .form .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}

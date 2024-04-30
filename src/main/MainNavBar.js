@@ -14,6 +14,7 @@ import ViewCustomers from '../admin/ViewCustomers';
 import './style.css';
 import '../admin/Product';
 import AddSeller from './../admin/AddSeller';
+import ViewSellers from '../admin/ViewSellers';
 
 export default function MainNavBar() {
   const [showMenu, setShowMenu] = useState(false);
@@ -58,6 +59,9 @@ export default function MainNavBar() {
                 <Link to="/recommend">Recommend</Link>
                 <Link to="/viewcustomers">View Customers</Link>
                 <Link to="/AddSeller">Add Seller</Link>
+                <Link to="/ViewSeller">View Seller</Link>
+
+
               </div>
             )}
           </li>
@@ -81,6 +85,8 @@ export default function MainNavBar() {
         <Route path="/adminhome" element={<AdminHome />} exact />
         <Route path="/viewcustomers" element={<ViewCustomers />} exact />
         <Route path="/AddSeller" element={<AddSeller />} exact />
+        <Route path="/ViewSeller" element={<ViewSellers/>} exact />
+
 
 
         
