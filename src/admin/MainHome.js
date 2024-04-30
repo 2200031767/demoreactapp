@@ -26,9 +26,7 @@ import mug3 from './images2/mug3.jpg';
 import oneplus11r from './images2/oneplus11r.jpg';
 import s23ultra from './images2/s23ultra.webp';
 import s24ultra from './images2/s24ultra.avif';
-import Recommend from './Recommend.js';
 import './images.css';
-import { useNavigate } from 'react-router-dom';
 
 export default function MainHome() {
   const recommend= () => {
@@ -450,7 +448,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={oneplus11r} width='350px' height='350px' alt='pods' />
+                  <img src={oneplus11r} width='350px' height='350px' alt='pod' />
                   <br />
                   <h3>ONEPLUS 11R </h3>
                   <button className='buy-button'>Buy</button>
