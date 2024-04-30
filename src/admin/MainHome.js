@@ -29,17 +29,13 @@ import s24ultra from './images2/s24ultra.avif';
 import Recommend from './Recommend.js';
 import './images.css';
 import { useNavigate } from 'react-router-dom';
-// import Iphone13 from '../media/Iphone13';
 
 export default function MainHome() {
   const recommend= () => {
     window.location.href = '/Recommend'; 
   };
-  const navigate = useNavigate();
 
-  const handleIphone13 = () => {
-   window.location.href='/discription' // Use navigate function to navigate to '/Iphone13' route
-  };
+  
 
 
 
@@ -132,7 +128,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={image} width='350px' height='350px' alt='image' />
+                  <img src={image} width='350px' height='350px' alt='laptop' />
                   <br />
                   <h3>Dell Laptop</h3>
                   
@@ -149,7 +145,7 @@ export default function MainHome() {
             <tr>
               <td>
                 <div className='box'>
-                  <img src={canona} width='350px' height='350px' alt='image' />
+                  <img src={canona} width='350px' height='350px' alt='camera' />
                   <br />
                   <h3>Canon Digital Camera SX160</h3>
                   
@@ -164,7 +160,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={canonb} width='350px' height='350px' alt='image' />
+                  <img src={canonb} width='350px' height='350px' alt='canon' />
                   <br />
                   <h3>Canon Digital Camera XUS </h3>
                   
@@ -179,7 +175,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={applepods} width='350px' height='350px' alt='image' />
+                  <img src={applepods} width='350px' height='350px' alt='apple' />
                   <br />
                   <h3>APPLE GEN 3 </h3>
                   
@@ -197,7 +193,7 @@ export default function MainHome() {
             <tr>
               <td>
                 <div className='box'>
-                  <img src={apple3} width='350px' height='350px' alt='image' />
+                  <img src={apple3} width='350px' height='350px' alt='apple' />
                   <br />
                   <h3>APPLE GEN 2</h3>
                 
@@ -212,7 +208,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={applevp} width='350px' height='350px' alt='image' />
+                  <img src={applevp} width='350px' height='350px' alt='apple' />
                   <br />
                   <h3>APPLE VISION PRO  </h3>
                   <button onClick={recommend} className='recommend-button'>Recommend</button>
@@ -225,7 +221,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={crocs1} width='350px' height='350px' alt='image' />
+                  <img src={crocs1} width='350px' height='350px' alt='crocs' />
                   <br />
                   <h3>WHITE CROCS </h3>
                   
@@ -244,7 +240,7 @@ export default function MainHome() {
             <tr>
               <td>
                 <div className='box'>
-                  <img src={crocs2} width='350px' height='350px' alt='image' />
+                  <img src={crocs2} width='350px' height='350px' alt='crocs' />
                   <br />
                   <h3>BLACK CROCS</h3>
                 
@@ -259,7 +255,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={ICON} width='350px' height='350px' alt='image' />
+                  <img src={ICON} width='350px' height='350px' alt='perfume' />
                   <br />
                   <h3>ICON PERFUME  </h3>
                   
@@ -274,7 +270,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={icon2} width='350px' height='350px' alt='image' />
+                  <img src={icon2} width='350px' height='350px' alt='perfume' />
                   <br />
                   <h3>ICON PERFUME  </h3>
                   
@@ -291,7 +287,7 @@ export default function MainHome() {
             <tr>
               <td>
                 <div className='box'>
-                  <img src={jfsd2} width='350px' height='350px' alt='image' />
+                  <img src={jfsd2} width='350px' height='350px' alt='book' />
                   <br />
                   <h3>JAVA FOR WEB DEVELOPMENT</h3>
                   
@@ -307,7 +303,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={jfsd1} width='350px' height='350px' alt='image' />
+                  <img src={jfsd1} width='350px' height='350px' alt='book' />
                   <br />
                   <h3>FULL STACK DEVELOPMENT BOOK </h3>
                  
@@ -323,7 +319,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={MERN1} width='350px' height='350px' alt='image' />
+                  <img src={MERN1} width='350px' height='350px' alt='book' />
                   <br />
                   <h3>MERN STACK DEVEPOLMENT BOOK </h3>
                   
@@ -342,7 +338,7 @@ export default function MainHome() {
             <tr>
               <td>
                 <div className='box'>
-                  <img src={MERN2} width='350px' height='350px' alt='image' />
+                  <img src={MERN2} width='350px' height='350px' alt='book' />
                   <br />
                   <h3>PRO MERN STACK </h3>
                   
@@ -358,7 +354,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={lamp1} width='350px' height='350px' alt='image' />
+                  <img src={lamp1} width='350px' height='350px' alt='lamp' />
                   <br />
                   <h3>STUDY LAMP </h3>
                   
@@ -373,7 +369,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={lamp2} width='350px' height='350px' alt='image' />
+                  <img src={lamp2} width='350px' height='350px' alt='lamp' />
                   <br />
                   <h3> BED LAMP </h3>
                   
@@ -391,7 +387,7 @@ export default function MainHome() {
             <tr>
               <td>
                 <div className='box'>
-                  <img src={mug1} width='350px' height='350px' alt='image' />
+                  <img src={mug1} width='350px' height='350px' alt='mug' />
                   <br />
                   <h3>FRIENDS MUG </h3>
                   
@@ -405,7 +401,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={mug2} width='350px' height='350px' alt='image' />
+                  <img src={mug2} width='350px' height='350px' alt='flask' />
                   <br />
                   <h3>COFFEE FLASK</h3>
                   
@@ -419,7 +415,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={mug3} width='350px' height='350px' alt='image' />
+                  <img src={mug3} width='350px' height='350px' alt='mug' />
                   <br />
                   <h3>MUG </h3>
                   
@@ -436,7 +432,7 @@ export default function MainHome() {
             <tr>
               <td>
                 <div className='box'>
-                  <img src={s23ultra} width='350px' height='350px' alt='image' />
+                  <img src={s23ultra} width='350px' height='350px' alt='samsung' />
                   <br />
                   <h3>S23 ULTRA </h3>
                   
@@ -445,7 +441,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={s24ultra} width='350px' height='350px' alt='image' />
+                  <img src={s24ultra} width='350px' height='350px' alt='phone' />
                   <br />
                   <h3>S24 ULTRA</h3>
                   
@@ -454,7 +450,7 @@ export default function MainHome() {
               </td>
               <td>
                 <div className='box'>
-                  <img src={oneplus11r} width='350px' height='350px' alt='image' />
+                  <img src={oneplus11r} width='350px' height='350px' alt='pods' />
                   <br />
                   <h3>ONEPLUS 11R </h3>
                   <button className='buy-button'>Buy</button>
