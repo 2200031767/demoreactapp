@@ -14,12 +14,12 @@ export default function Home() {
             <h1 align = "center"> <i> <font color="#6a4c93"> EXPLORE  </font> </i>  </h1>
         <br/> 
         &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
-   <img src = {require('./images/iphone13.jpg')} height={450} width={450} alt = ""/> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
-   <img src = {require('./images/image2.jpg')} height={450} width={450}  alt = ""/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-   <img src = {require('./images/image3.jpeg')} height={450} width={500}  alt = ""/>  <br/> <br/> <br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-   <img src = {require('./images/image4.webp')} height={450} width={450}  alt = ""/>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-   <img src = {require('./images/image5.jpeg')} height={450} width={450}  alt = ""/ > &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
-   <img src = {require('./images/image6.jpg')} height={450} width={500}  alt = ""/ > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+   <img src = {require('./images/iphone13.jpg')} height={350} width={350} alt = ""/> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
+   <img src = {require('./images/image2.jpg')} height={350} width={350}  alt = ""/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+   <img src = {require('./images/image3.jpeg')} height={350} width={500}  alt = ""/>  <br/> <br/> <br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+   <img src = {require('./images/image4.webp')} height={350} width={350}  alt = ""/>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+   <img src = {require('./images/image5.jpeg')} height={350} width={350}  alt = ""/ > &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
+   <img src = {require('./images/image6.jpg')} height={350} width={350}  alt = ""/ > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
     </div>
     </div>
   )
