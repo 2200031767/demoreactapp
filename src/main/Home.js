@@ -16,7 +16,7 @@ export default function Home() {
         &nbsp; &nbsp;  &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
    <img src = {require('./images/iphone13.jpg')} height={350} width={350} alt = ""/> &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  
    <img src = {require('./images/image2.jpg')} height={350} width={350}  alt = ""/> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
-   <img src = {require('./images/image3.jpeg')} height={350} width={500}  alt = ""/>  <br/> <br/> <br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+   <img src = {require('./images/image3.jpeg')} height={350} width={350}  alt = ""/>  <br/> <br/> <br/>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
    <img src = {require('./images/image4.webp')} height={350} width={350}  alt = ""/>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
    <img src = {require('./images/image5.jpeg')} height={350} width={350}  alt = ""/ > &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
    <img src = {require('./images/image6.jpg')} height={350} width={350}  alt = ""/ > &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; 
