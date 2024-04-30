@@ -27,7 +27,6 @@ import mug3 from './images2/mug3.jpg';
 import oneplus11r from './images2/oneplus11r.jpg';
 import s23ultra from './images2/s23ultra.webp';
 import s24ultra from './images2/s24ultra.avif';
-import Recommend from './Recommend.js';
 import './images.css';
 
 export default function MainHome() {
